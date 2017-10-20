@@ -27,7 +27,6 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message,
-                    _format: 'plain'
                 },
                 dataType:"json",
                 cache: false,
