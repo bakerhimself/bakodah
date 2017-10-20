@@ -27,9 +27,9 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message,
-                    _subject:"لديك رسالة جديدة من موقع مكتب الإستشارات",
-                    _gotcha:"display:none",
-                    _format: "plain"
+                    _subject:'لديك رسالة جديدة من موقع مكتب الإستشارات',
+                    _gotcha: 'display:none',
+                    _format: 'plain'
 
                 },
                 dataType:"json",
