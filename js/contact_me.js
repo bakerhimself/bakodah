@@ -28,7 +28,6 @@ $(function() {
                     email: email,
                     message: message,
                     _format: 'plain'
-
                 },
                 dataType:"json",
                 cache: false,
