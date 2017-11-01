@@ -13,6 +13,7 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
+            var _format =$("input#_format").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -27,6 +28,7 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message,
+                    _format: 'plain',
                 },
                 dataType:"json",
                 cache: false,
