@@ -13,15 +13,16 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var _format =$("input#_format").val();
             var message = $("textarea#message").val();
+            var _format =$("input#_format").val();
+            var _subject =$("input#_subject").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formspree.io/abdullah@bakodah.com.sa",
+                url: "https://formspree.io/baker@alhadrami.xyz",
                 method: "POST",
                 data: {
                     name: name,
@@ -29,6 +30,7 @@ $(function() {
                     email: email,
                     message: message,
                     _format: 'plain',
+                    _subject: 'New message from bakodah.com.sa',
                 },
                 dataType:"json",
                 cache: false,
